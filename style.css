@@ -1,0 +1,261 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #ccc
+}
+/* Custom Styles and Media Queries */
+@media (max-width: 576px) {
+/* Styles for extra small devices (mobile) */
+
+.responsive-box {
+    width: 100%;
+    margin-bottom: 100px;
+    }
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 7vw;
+}
+.nav-item {
+  text-transform: uppercase;
+}
+.nav-item a {
+  font-size: 1.5em;
+}
+.submenu {
+  width: 95vw;
+  margin: 0 -0.5em;  
+}
+.submenu li {
+  list-style: none;
+}
+.submenu li a {
+ margin-left: -11vw;
+}
+.navbar {
+  background-color: #333;
+}
+.navbar-nav {
+  text-align: center;
+}
+.line {
+  height: 0.2vh;
+  background-color: #FFD700;
+  border-radius: 100%;
+}
+.col-12 {
+  width: 100%;
+  overflow: hidden;
+  margin: -2em -3.5vw;
+}
+.col-12 img {
+  width: 100vw;
+  max-height: min-content;
+  transition: all 0.5s ease-in-out;
+}
+.col-12:hover img {
+  scale: 1.02;
+}
+.col-12 h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2vh;
+  font-weight: 500;
+  margin-left: 1em;
+  transition: all 0.5s ease-in-out;
+}
+.col-12:hover h4 {
+  color: #ff0000;
+  text-decoration: underline;
+}
+.col-12 p {
+  width: 93vw;
+  text-align: justify;
+}
+.col-12 span {
+  width: 93vw;
+  text-align: center;
+}
+.col-12 span a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+}
+.col-12 button {
+  padding: 0.5em 1em;
+  background-color: #333;
+  color: #FFD700;
+  font-weight: 500;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+.col-12:hover button {
+  border: 1px solid #ffffff;
+  color: #ff0000;
+  background-color: #ffffff;
+}
+footer {
+  margin-bottom: 1em;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px 2px #ff0000;
+  width: 90vw;
+  height: 28vh;
+}
+footer span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+}
+footer span a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 0.95em;
+}
+footer span a:hover {
+  color: #ff0000;
+  text-decoration: none;
+}
+.social {
+
+  display: flex;
+  color: #fff;
+
+}
+.social span a i {
+  font-size: 1.5em;
+
+}
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+/* Styles for small devices (tablets) */
+.responsive-box {
+    width: 50%;
+    margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+/* Styles for medium devices (landscape tablets) */
+.responsive-box {
+    width: 50%;
+    margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+/* Styles for large devices (desktops) */
+.responsive-box {
+    width: 50%;
+    margin-bottom: 15px;
+    }
+}
+
+/* Style for sub-menu */
+.navbar-nav .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-nav .nav-item:hover .submenu {
+    display: block;
+}
+
+.navbar-nav .submenu a {
+    color: #333 !important;
+}
+.btn1 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 100px;
+  left: 0px;
+  z-index: 11000;
+  transition-duration: 0.5s;
+}
+.btn1 .icon-left {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: 8px;
+  width: 30px;
+  top: 30px;
+  background-color: #212121;
+  left: 0px;
+}
+.btn1 .icon-left:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  background-color: #212121;
+  content: "";
+  top: -20px;
+}
+.btn1 .icon-left:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  background-color: #212121;
+  content: "";
+  top: 20px;
+}
+.btn1 .icon-left:hover {
+  cursor: pointer;
+}
+.btn1 .icon-right {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: 8px;
+  width: 30px;
+  top: 30px;
+  background-color: #fff;
+  left: 30px;
+}
+.btn1 .icon-right:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  background-color: #fff;
+  content: "";
+  top: -20px;
+}
+.btn1 .icon-right:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  background-color: #fff;
+  content: "";
+  top: 20px;
+}
+.btn1.open .icon-left {
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.btn1.open .icon-left:before {
+  transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+}
+.btn1.open .icon-left:after {
+  transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+}
+.btn1.open .icon-right {
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.btn1.open .icon-right:before {
+  transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+}
+.btn1.open .icon-right:after {
+  transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+}
+.btn1:hover {
+  cursor: pointer;
+}
